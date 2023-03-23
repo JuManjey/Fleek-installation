@@ -13,6 +13,7 @@ cd $HOME
 git clone https://github.com/fleek-network/ursa.git
 cd ursa
 make install
+##!! ERROR ссылется на функцию delete, которой нет (delete from db)
 ursa --version
 screen -S fleek -X stuff "cd $HOME/ursa\n"
 screen -S fleek -X stuff "./ursa\n"
