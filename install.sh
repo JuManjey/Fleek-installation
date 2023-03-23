@@ -14,6 +14,7 @@ git clone https://github.com/fleek-network/ursa.git
 cd ursa
 make install
 ursa --version
-
-
-
+screen -S fleek -X stuff "cd $HOME/ursa\n"
+screen -S fleek -X stuff "./ursa\n"
+curl https://ipfs.io/ipfs/bafybeidqdywrzg7c3b4dmm332m4b7uiakgitplz2pep2zntederxpj3odi -o basic.car
+ursa rpc put basic.car
